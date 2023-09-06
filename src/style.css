@@ -1,0 +1,158 @@
+html {
+  font-family: sans-serif;
+  background-color: #eeeee4;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  border-radius: 1em;
+  border: black solid 1px;
+  background-color: white;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #873e23;
+  color: white;
+  border-radius: 1em;
+  padding: 0.5em;
+}
+
+label,
+input {
+  font-weight: bold;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+input {
+  display: flex;
+  justify-self: center;
+  width:100%;
+}
+
+#passwordContainer {
+  width: 100%;
+}
+
+#passwordSvgContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#eyeIcon {
+  position: absolute;
+  left: 100px;
+  top: -5px;
+}
+
+#btnSubmit {
+  display: flex;
+  justify-content: end;
+  
+}
+
+button {
+  border-radius: 2em;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  background-color: #873e23;
+  color: white;
+  text-align: center;
+  font-size: large;
+  transition: all 200ms;
+}
+
+div#eyeIcon {
+  width: 5%;
+}
+
+#passwordStrengthText {
+  font-weight: bold;
+}
+
+.resDiv{
+    margin: 18px auto;
+    font-weight: bold;
+    background-color: #873e23;
+    width: 90%;
+    border-radius: 1em;
+    padding:1em 0.5em;
+    color: white;
+    text-align: center;
+}
+
+progress {
+  margin-bottom: 10px;
+  webkit-appearance: none;
+  appearance: none;
+  border-radius: 8px;
+  height: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  border: solid 1px rgba(0, 0, 0, 0.4);
+  background-color: white;
+}
+progress::-webkit-progress-bar {
+  margin-bottom: 10px;
+  border-radius: 8px;
+  height: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  border: solid 0.5px rgba(0, 0, 0, 0.4);
+  background-color: white;
+  overflow: hidden;
+}
+progress[value="25"]::-webkit-progress-value {
+  background-color: #e74c3c; /* Couleur rouge pour la partie remplie */
+}
+progress[value="25"]::-moz-progress-bar {
+  background-color: #e74c3c; /* Couleur rouge pour la partie remplie */
+}
+progress[value="50"]::-webkit-progress-value {
+  background-color: #f1c40f; /* Couleur rouge pour la partie remplie */
+}
+progress[value="50"]::-moz-progress-bar {
+  background-color: #f1c40f; /* Couleur rouge pour la partie remplie */
+}
+progress[value="75"]::-webkit-progress-value {
+  background-color: #09e20c; /* Couleur rouge pour la partie remplie */
+}
+progress[value="75"]::-moz-progress-bar {
+  background-color: #09e20c; /* Couleur rouge pour la partie remplie */
+}
+progress[value="100"]::-webkit-progress-value {
+  background-color: #09e20c; /* Couleur rouge pour la partie remplie */
+}
+progress[value="100"]::-moz-progress-bar {
+  background-color: #09e20c; /* Couleur rouge pour la partie remplie */
+}
+
+@media screen and (min-width: 640px) {
+  fieldset {
+    width: 50%;
+    margin: 0 auto;
+  }
+  input {
+    width: 60%;
+  }
+  #password {
+    width: 60%;
+  }
+  progress {
+    width: 60%;
+  }
+  #passwordStrengthText {
+    font-weight: bold;
+  }
+  button:hover {
+    background-color: #612d19;
+    cursor: pointer;
+  }
+  .resDiv{
+    width: 50%;
+  }
+}
