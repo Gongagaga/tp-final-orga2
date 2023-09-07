@@ -15,7 +15,7 @@ export const temperatureDisplay = () => {
             <li>les °K en °C</li>
         </ul>
         
-        <div class="input-container">
+        <form class="input-container">
             <label for="temperature">Température :</label>
             <input type="number" id="temperature" placeholder="Entrez la température" required>
             <select id="unit" required>
@@ -23,7 +23,7 @@ export const temperatureDisplay = () => {
                 <option value="fahrenheit">Fahrenheit (°F)</option>
                 <option value="kelvin">Kelvin (K)</option>
             </select>
-        </div>
+        </form>
         
         <div class="result-container">
             <p>Résultat :</p>

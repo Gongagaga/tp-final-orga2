@@ -15,12 +15,12 @@ export const baseDisplay = () => {
             <li>les Héxadécimales en Binaire et Décimales</li>
         </ul>
             
-        <div class="input-container">
+        <form class="input-container">
             <label for="input-number">Nombre :</label>
             <input type="text" id="input-number" placeholder="Entrez le nombre" required>
-        </div>
+        </form>
 
-        <div class="conversion-options">
+        <form class="conversion-options">
             <label for="from-base">De la base :</label>
             <select id="from-base" required>
                 <option value="decimal">Décimal</option>
@@ -34,7 +34,7 @@ export const baseDisplay = () => {
                 <option value="binary">Binaire</option>
                 <option value="hexadecimal">Hexadécimal</option>
             </select>
-        </div>
+        </form>
         
         <div class="result-container">
             <p>Résultat :</p>

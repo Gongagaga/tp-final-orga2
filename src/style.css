@@ -54,7 +54,13 @@ a:hover:not(.logo-container a) {
   width: 90%;
   margin: 20px auto 0px;
 }
-
+.activated {
+  background-color: #835609;
+  color: #90ee90;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+}
 .tabs-container {
   display: flex;
   flex-direction: column;

@@ -12,9 +12,9 @@ export const navbarDisplay = () => {
         <a href="javascript:void(0)" @click="activeTab = 'accueil'"><img src="/modules/content/img/kiwi.png" alt="converti mon kiwi" style="width: 40px;"></a>
     </div>
     <div class="tabs-container">
-        <a class="tab" href="javascript:void(0)" @click="activeTab = 'temperature'">Température</a>
-        <a class="tab" href="javascript:void(0)" @click="activeTab = 'weight'">Poids</a>
-        <a class="tab" href="javascript:void(0)" @click="activeTab = 'bases'">Bases</a>
+        <a class="tab" href="javascript:void(0)" @click="activeTab = 'temperature'" x-bind:class="{ 'activated': activeTab === 'temperature' }">Température</a>
+        <a class="tab" href="javascript:void(0)" @click="activeTab = 'weight'" x-bind:class="{'activated' : activeTab === 'weight'}">Poids</a>
+        <a class="tab" href="javascript:void(0)" @click="activeTab = 'bases'" x-bind:class="{'activated' : activeTab === 'bases'}">Bases</a>
     </div>
   `;
 

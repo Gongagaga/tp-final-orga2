@@ -14,7 +14,7 @@ const title = document.createElement("div");
 title.id = "titleKiwi";
 title.innerHTML = `
         <img src="/modules/content/img/kiwi.png" alt="converti mon kiwi" width="75px" height="75px">
-        <h1>Convertis mon kiwi !</h1>
+        <h1>Convertis mon kiwi&nbsp;!</h1>
         <img src="/modules/content/img/kiwi.png" alt="converti mon kiwi" width="75px" height="75px">
     `;
 

@@ -15,7 +15,7 @@ export const weightDisplay = () => {
             <li>les Oz en Kg</li>
         </ul>
 
-        <div class="input-container">
+        <form class="input-container">
             <label for="weight">Poids :</label>
             <input type="number" id="weight" placeholder="Entrez le poids" required>
             <select id="weight-unit" required>
@@ -23,7 +23,7 @@ export const weightDisplay = () => {
                 <option value="lb">Livres (lb)</option>
                 <option value="oz">Onces (oz)</option>
             </select>
-        </div>
+        </form>
         
         <div class="result-container">
             <p>Résultat :</p>
