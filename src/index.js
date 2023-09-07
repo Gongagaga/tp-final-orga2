@@ -1,4 +1,4 @@
-import { formTag } from "./modules/form";
+import { formCreate } from "./modules/form/formCreate";
 import "./style.css";
 
-formTag();
+formCreate()
