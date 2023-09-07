@@ -3,8 +3,17 @@ export const baseDisplay = () => {
   const converterContainer = document.getElementById("convertor-container");
 
   const baseDiv = document.createElement("div");
+  baseDiv.setAttribute("x-show", "activeTab === 'bases'");
+
   baseDiv.innerHTML = `
         <h2>Convertisseur de bases</h2>
+
+        <p>Convertisseur permettant de transformer : </p>
+        <ul>
+            <li>les Décimales en Binaire et Héxadécimales</li>
+            <li>les Binaire en Décimales et Héxadécimales</li>
+            <li>les Héxadécimales en Binaire et Décimales</li>
+        </ul>
             
         <div class="input-container">
             <label for="input-number">Nombre :</label>
@@ -18,6 +27,7 @@ export const baseDisplay = () => {
                 <option value="binary">Binaire</option>
                 <option value="hexadecimal">Hexadécimal</option>
             </select>
+            <br>
             <label for="to-base">Vers la base :</label>
             <select id="to-base" required>
                 <option value="decimal">Décimal</option>

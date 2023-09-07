@@ -4,8 +4,16 @@ export const temperatureDisplay = () => {
   const convertorContainer = document.getElementById("convertor-container");
 
   const temperatureDiv = document.createElement("div"); // Créez un élément div
+  temperatureDiv.setAttribute("x-show", "activeTab === 'temperature'");
   temperatureDiv.innerHTML = `
         <h2>Convertisseur de température</h2>
+
+        <p>Convertisseur permettant de transformer : </p>
+        <ul>
+            <li>les °C en °F</li>
+            <li>les °F en °C</li>
+            <li>les °K en °C</li>
+        </ul>
         
         <div class="input-container">
             <label for="temperature">Température :</label>

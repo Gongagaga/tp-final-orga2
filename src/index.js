@@ -1,9 +1,12 @@
 import { convertor } from "./modules/content/convertor";
-// import { formCreate } from "./modules/form/formCreate";
 import "./style.css";
 import "./modules/content/img/kiwi.png";
 import { navbarDisplay } from "./modules/navbar/navbar";
 import { footer } from "./modules/footer/footer";
+import Alpine from "alpinejs";
+
+window.Alpine = Alpine;
+Alpine.start();
 
 navbarDisplay();
 

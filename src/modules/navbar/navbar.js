@@ -6,31 +6,20 @@ export const navbarDisplay = () => {
   // Ajoutez "nav" au conteneur principal
   document.body.appendChild(nav);
 
-  // Logo à gauche
-  const logoContainer = document.createElement("div");
-  logoContainer.className = "logo-container";
-  const logo = document.createElement("img");
-  logo.src = "/modules/content/img/kiwi.png"; // Remplacez 'logo.png' par le chemin de votre logo
-  logo.alt = "converti mon kiwi";
-  logoContainer.appendChild(logo);
-  logo.style.width = "40px";
+  // Structure HTML du menu
+  const menuHTML = `
+    <div class="logo-container">
+        <a href="javascript:void(0)" @click="activeTab = 'accueil'"><img src="/modules/content/img/kiwi.png" alt="converti mon kiwi" style="width: 40px;"></a>
+    </div>
+    <div class="tabs-container">
+        <a class="tab" href="javascript:void(0)" @click="activeTab = 'temperature'">Température</a>
+        <a class="tab" href="javascript:void(0)" @click="activeTab = 'weight'">Poids</a>
+        <a class="tab" href="javascript:void(0)" @click="activeTab = 'bases'">Bases</a>
+    </div>
+  `;
 
-  // Onglets à droite
-  const tabsContainer = document.createElement("div");
-  tabsContainer.className = "tabs-container";
-
-  // Liens des convertors
-  const temperatureTab = createTab("Température", "#temperature");
-  const weightTab = createTab("Poids", "#weight");
-  const baseTab = createTab("Bases", "#bases");
-
-  tabsContainer.appendChild(temperatureTab);
-  tabsContainer.appendChild(weightTab);
-  tabsContainer.appendChild(baseTab);
-
-  // Ajoutez les éléments à la barre de navigation
-  nav.appendChild(logoContainer);
-  nav.appendChild(tabsContainer);
+  // Utilisez innerHTML pour définir la structure HTML du menu
+  nav.innerHTML = menuHTML;
 
   // Ajoutez la barre de navigation au conteneur prévu
   document.querySelector("#main").appendChild(nav);

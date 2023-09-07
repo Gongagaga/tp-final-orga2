@@ -2,11 +2,19 @@ import { weightConvertor } from "../convertors/weightConvertor";
 
 export const weightDisplay = () => {
   const convertorContainer = document.getElementById("convertor-container");
-
   const weightDiv = document.createElement("div"); // Créez un élément div
+  weightDiv.setAttribute("x-show", "activeTab === 'weight'");
+
   weightDiv.innerHTML = `
         <h2>Convertisseur de poids</h2>
         
+        <p>Convertisseur permettant de transformer : </p>
+        <ul>
+            <li>les Kg en Lb</li>
+            <li>les Lb en Kg</li>
+            <li>les Oz en Kg</li>
+        </ul>
+
         <div class="input-container">
             <label for="weight">Poids :</label>
             <input type="number" id="weight" placeholder="Entrez le poids" required>
