@@ -5,7 +5,7 @@ export const temperatureDisplay = () => {
 
   const temperatureDiv = document.createElement("div"); // Créez un élément div
   temperatureDiv.innerHTML = `
-        <h1>Convertisseur de température</h1>
+        <h2>Convertisseur de température</h2>
         
         <div class="input-container">
             <label for="temperature">Température :</label>

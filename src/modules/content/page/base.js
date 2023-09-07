@@ -4,7 +4,7 @@ export const baseDisplay = () => {
 
   const baseDiv = document.createElement("div");
   baseDiv.innerHTML = `
-        <h1>Convertisseur de bases</h1>
+        <h2>Convertisseur de bases</h2>
             
         <div class="input-container">
             <label for="input-number">Nombre :</label>

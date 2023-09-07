@@ -5,7 +5,7 @@ export const weightDisplay = () => {
 
   const weightDiv = document.createElement("div"); // Créez un élément div
   weightDiv.innerHTML = `
-        <h1>Convertisseur de poids</h1>
+        <h2>Convertisseur de poids</h2>
         
         <div class="input-container">
             <label for="weight">Poids :</label>
